@@ -41,7 +41,8 @@
 
 
 <div class="container">
-    <form action='/analyze' method="get">
+    <form action='/analyze' method="post">
+        {% csrf_token %}
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label">Enter Your Text Here and let textutils do the magic:- </label>
           <textarea name="text" class="form-control" id="exampleFormControlTextarea1" rows="9"></textarea>
