@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text Utils!!!!!!</title>
+</head>
+<body>
+    <h1>Welcome to Text Analyzer, Enter your text below</h1>
+<!--    {{ Name }} is from {{ Place }}-->
+<form action='/analyze' method="get">
+    <textarea name="text" style="width: 1376px; height: 202px;">
+    </textarea>
+    <br>
+    <input type="checkbox" name="removepunc"> Remove Punctuations </input> <br>
+    <input type="checkbox" name="full_caps"> Upper Case </input><br>
+    <input type="checkbox" name="new_line_remover"> New Line Remover</input> <br>
+    <input type="checkbox" name="extra_space_remover"> Extra Space Remover</input><br>
+    <input type="checkbox" name="char_count"> Count Characters</input>
+    <br>
+
+    <button type="submit">
+        Analyze Text
+    </button>
+</form>
+</body>
+</html>
